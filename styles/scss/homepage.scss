@@ -1,0 +1,105 @@
+@import "partials/defaults";
+@import "partials/navigation";
+
+main {
+    margin-top: -105px;
+    clear: both;
+}
+
+.carousel-control-prev, carousel-control-next {
+    z-index: 4;
+    color: $theme-bg;
+    display: none;
+}
+
+#product-listing {
+    width: 100%;
+    padding-top: 20px;
+}
+
+ul {
+    &.category-select {
+        @extend %navigation-style;
+        padding-top: 10px;
+        padding-left: 0;
+        border-top: 1px solid $theme-bg;
+        text-align: left;
+    }
+}
+
+article {
+    figure {
+        figcaption {
+            i.fa {
+                color: #FFF;
+                background-color: $theme-bg;
+                margin-right: 5px;
+                padding: 5px;
+                border-radius: 50%;
+                &:hover, &:active, &:focus {
+                    background-color: $theme-hover;
+                }
+            }
+        }
+    }
+}
+
+.item-container {
+    width: 100%;
+    display: block;
+    .item {
+        display: inline-block;
+        position: relative;
+        width: 25%;
+        float: left;
+        padding: 5px;
+        figure {
+            max-width: 100%;
+            a {
+                display: block;
+                img {
+                    width: 100%;
+                }
+            }
+            figcaption {
+                position: absolute;
+                bottom: -115px;
+                background-color: #FFF;
+                width: 100%;
+                text-align: center;
+                color: $theme-color;
+                display: none;
+                z-index: 1000;
+                h4 {
+                    text-transform: uppercase;
+                } 
+                .item-cta {
+                    display: inline-block;
+                    a {
+                        float: left;
+                    }
+                }
+            }
+        }
+        &:nth-of-type(3), &:nth-of-type(4) {
+            width: 50%;
+        }
+        &:nth-child(3n) {
+            float: right;
+        }
+        .price-tag {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            color: $theme-color;
+            del {
+                margin-right: 10px;
+            }
+        }
+        &:hover, &:focus {
+            overflow: visible;
+            background-color: #FFF;
+            z-index: 3;
+        }
+    }
+}

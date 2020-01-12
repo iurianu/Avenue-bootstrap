@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage">
+    <head>
+        <meta charset="utf-8">
+        <title>Avenue Homepage</title>
+        <meta name="robots"         content="index, follow">
+        <meta name="viewport"       content="width=device-width,initial-scale=1">
+        <meta name="description"    content=" ... ">
+        <!-- Stylesheets and Fonts -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/homepage.css">
+        <!-- Sitelink Searchbox Code -->
+        <script type="application/ld+json">    
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "http://mywebsite.com/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "http://query.mywebsite.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+        </script>
+    </head>
+    <body>
+        <header class="container-fluid">
+            <nav class="row upper-nav">
+                <div class="col-6 offset-md-2 col-md-4">
+                    <label for="currency">Currency:</label>
+                    <select class="selectpicker" name="currency">
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="USD">USD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="AUD">AUD</option>
+                    </select>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <ul class="col-6 col-md-3 register-menu">
+                    <li id="register" itemprop="potentialAction" itemscope itemtype="http://schema.org/RegisterAction">
+                        <a itemprop="target" href="register.html" title="Register">
+                            <span itemprop="name">Register</span>
+                        </a>
+                    </li>
+                    <li id="unregister" itemprop="potentialAction" itemscope itemtype="http://schema.org/UnRegisterAction">
+                        <a itemprop="target" href="unregister.html" title="Unrgister">
+                            <span itemprop="name">Unregister</span>
+                        </a>
+                    </li>                    
+                    <li id="signin" itemprop="potentialAction" itemscope itemtype="http://schema.org/JoinAction">
+                        <a itemprop="target" href="signin.html" title="Sign In">
+                            <span itemprop="name">Sign In</span>
+                        </a>
+                    </li>
+                    <li id="signout" itemprop="potentialAction" itemscope itemtype="http://schema.org/LeaveAction">
+                        <a itemprop="target" href="signout.html" title="Sign Out">
+                            <span itemprop="name">Sign Out</span>
+                        </a>
+                    </li>
+                    <li id="cart" itemprop="potentialAction" itemscope itemtype="http://schema.org/CheckAction">
+                        <a itemprop="target" href="mycart.html" title="Check Cart"><meta itemprop="name" content="Cart">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span id="empty">empty <i class="fa fa-caret-down"></i></span>
+                            <span id="notempty">{no-of-items} items <i class="fa fa-caret-up"></i></span>
+
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="lower-nav">
+                <figure class="col-6 col-md-3 logo">
+                    <a href="#" title="logo">Avenue fashion</a>
+                </figure>
+                <ul role="navigation" class="col-6 col-md-6 main-menu">
+                    <li>
+                        <a href="men.html">
+                            <span>MEN</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="women.html">
+                            <span>WOMEN</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="brand.html">
+                            <span>The Brand</span>
+                        </a>
+                    </li>                
+                    <li>
+                        <a href="stores.html">
+                            <span>Local Sores</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="lookbook.html">
+                            <span>Look Book</span>
+                        </a>
+                    </li>                
+                </ul>
+                <div class="col-md-3 form-group has-search">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="fa fa-search form-control-feedback"></span>
+                </div>
+            </nav>
+            
+        </header>
+        
+        <main>
+            <section class="carousel slide" id="slider" role="main" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="images/slider1.jpg" alt="First slide">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>...</h5>
+                        <p>...</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/slider2.jpg" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>...</h5>
+                            <p>...</p>
+                          </div>
+                        </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="images/slider3.jpg" alt="Third slide">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>...</h5>
+                        <p>...</p>
+                      </div>                        
+                    </div>
+                  </div>   
+                <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>                
+            </section>
+            
+            <section class="container" id="product-listing">
+                <ul role="menu" class="category-select">
+                    <li><a href="javascript:void();">Popular</a></li>
+                    <li><a href="javascript:void();">New Arrivals</a></li>
+                    <li><a href="javascript:void();">Best Sellers</a></li>
+                    <li><a href="javascript:void();">Special Offers</a></li>
+                    <li><a href="javascript:void();">Coming Soon</a></li>
+                </ul>
+                <div class="item-container">
+                    <article class="item">
+                        <figure>
+                            <a href="javascript:void();">
+                                <img src="images/products/item1.jpg">
+                            </a>
+                            <figcaption>
+                                <h4 class="item-name" itemprop="name">First Product Name</h4>
+                                <p class="item-description">Classic long-sleeve shirt for men.<br>90% cotton / 10% elastan.</p>
+                                <p class="item-cta">
+                                    <a href="javascript:void();"><i class="fa fa-shopping-cart"></i></a>
+                                    <a href="javascript:void();"><i class="fa fa-heart"></i></a>
+                                    <a href="javascript:void();"><i class="fa fa-compress"></i></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <div class="price-tag">
+                            <del class="normal-price">
+                                <sup class="price-currency">£</sup><span class="price-value">49</span>
+                            </del>
+                            <span class="offer-price">
+                                <sup class="price-currency">£</sup><span class="price-value">39</span>
+                            </span>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <figure>
+                            <a href="javascript:void();">
+                                <img src="images/products/item2.jpg">
+                            </a>
+                            <figcaption>
+                                <h4 class="item-name" itemprop="name">Second Product Name</h4>
+                                <p class="item-description">Classic long-sleeve shirt for men.<br>90% cotton / 10% elastan.</p>
+                                <p class="item-cta">
+                                    <a href="javascript:void();"><i class="fa fa-shopping-cart"></i></a>
+                                    <a href="javascript:void();"><i class="fa fa-heart"></i></a>
+                                    <a href="javascript:void();"><i class="fa fa-compress"></i></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <div class="price-tag">
+                            <del class="normal-price">
+                                <sup class="price-currency">£</sup><span class="price-value">49</span>
+                            </del>
+                            <span class="offer-price">
+                                <sup class="price-currency">£</sup><span class="price-value">39</span>
+                            </span>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <figure>
+                            <a href="javascript:void();">
+                                <img src="images/products/item3.jpg">
+                            </a>
+                            <figcaption>
+                                <h4 class="item-name" itemprop="name">Third Product Name</h4>
+                                <p class="item-description">Classic long-sleeve shirt for men.<br>90% cotton / 10% elastan.</p>
+                                <p class="item-cta">
+                                    <a href="javascript:void();"><i class="fa fa-shopping-cart"></i></a>
+                                    <a href="javascript:void();"><i class="fa fa-heart"></i></a>
+                                    <a href="javascript:void();"><i class="fa fa-compress"></i></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <div class="price-tag">
+                            <del class="normal-price">
+                                <sup class="price-currency">£</sup><span class="price-value">49</span>
+                            </del>
+                            <span class="offer-price">
+                                <sup class="price-currency">£</sup><span class="price-value">39</span>
+                            </span>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <figure>
+                            <a href="javascript:void();">
+                                <img src="images/products/item1.jpg">
+                            </a>
+                            <figcaption>
+                                <h4 class="item-name" itemprop="name">Fourth Product Name</h4>
+                                <p class="item-description">Classic long-sleeve shirt for men.<br>90% cotton / 10% elastan.</p>
+                                <p class="item-cta">
+                                    <a href="javascript:void();"><i class="fa fa-shopping-cart"></i></a>
+                                    <a href="javascript:void();"><i class="fa fa-heart"></i></a>
+                                    <a href="javascript:void();"><i class="fa fa-compress"></i></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <div class="price-tag">
+                            <del class="normal-price">
+                                <sup class="price-currency">£</sup><span class="price-value">49</span>
+                            </del>
+                            <span class="offer-price">
+                                <sup class="price-currency">£</sup><span class="price-value">39</span>
+                            </span>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <figure>
+                            <a href="javascript:void();">
+                                <img src="images/products/item2.jpg">
+                            </a>
+                            <figcaption>
+                                <h4 class="item-name" itemprop="name">Fifth Product Name</h4>
+                                <p class="item-description">Classic long-sleeve shirt for men.<br>90% cotton / 10% elastan.</p>
+                                <p class="item-cta">
+                                    <a href="javascript:void();"><i class="fa fa-shopping-cart"></i></a>
+                                    <a href="javascript:void();"><i class="fa fa-heart"></i></a>
+                                    <a href="javascript:void();"><i class="fa fa-compress"></i></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <div class="price-tag">
+                            <del class="normal-price">
+                                <sup class="price-currency">£</sup><span class="price-value">49</span>
+                            </del>
+                            <span class="offer-price">
+                                <sup class="price-currency">£</sup><span class="price-value">39</span>
+                            </span>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <figure>
+                            <a href="javascript:void();">
+                                <img src="images/products/item3.jpg">
+                            </a>
+                            <figcaption>
+                                <h4 class="item-name" itemprop="name">Sixth Product Name</h4>
+                                <p class="item-description">Classic long-sleeve shirt for men.<br>90% cotton / 10% elastan.</p>
+                                <p class="item-cta">
+                                    <a href="javascript:void();"><i class="fa fa-shopping-cart"></i></a>
+                                    <a href="javascript:void();"><i class="fa fa-heart"></i></a>
+                                    <a href="javascript:void();"><i class="fa fa-compress"></i></a>
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <div class="price-tag">
+                            <del class="normal-price">
+                                <sup class="price-currency">£</sup><span class="price-value">49</span>
+                            </del>
+                            <span class="offer-price">
+                                <sup class="price-currency">£</sup><span class="price-value">39</span>
+                            </span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="container">
+                <div class="col-6" id="copyright">&copy; 
+                    <span itemprop="copyrightYear">2019</span>, 
+                    <span itemprop="copyrightHolder">Avenue Fashion</span>
+                    <sup>TM</sup>
+                </div>
+                <div class="col-6" id="license">
+                    <span>Design by RobbyDesign.com</span>
+                    <span>Dev by <a href="https://iurianu.rocks">Iulian Andriescu</a></span>
+                </div>
+            </div>
+        </footer>        
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>  
+        <script src="scripts/scripts.js"></script>
+    </body>
+</html>
